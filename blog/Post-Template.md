@@ -10,8 +10,8 @@ taxonomy:
     post_tag:
         - tag-1
         - tag-1
-publisher:
-    Author(s): Username
+custom_fields:
+    publisher: Username
 ---
 (you may add multiple publishers)
 ## Post content
