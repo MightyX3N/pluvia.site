@@ -10,10 +10,8 @@ taxonomy:
     post_tag:
         - tag-1
         - tag-1
-custom_fields:
-    publisher: Username
 ---
-(you may add multiple publishers)
+
 ## Post content
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a lacinia orci.
