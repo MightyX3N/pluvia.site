@@ -11,7 +11,7 @@ taxonomy:
         - tag-1
         - tag-1
 custom_fields:
-    publisher: Your Username
+    publisher: Value Username
 ---
 (you may add multiple publishers)
 ## Post content
