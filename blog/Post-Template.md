@@ -11,9 +11,9 @@ taxonomy:
         - tag-1
         - tag-1
 custom_fields:
-    author: Your Username
+    publisher: Your Username
 ---
-
+(you may add multiple publishers)
 ## Post content
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a lacinia orci.
