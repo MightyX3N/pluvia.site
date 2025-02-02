@@ -11,7 +11,7 @@ taxonomy:
         - tag-1
         - tag-1
 custom_fields:
-author: Your Username
+    author: Your Username
 ---
 
 ## Post content
