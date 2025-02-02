@@ -1,4 +1,4 @@
-To create a post use the [Post Template](./blog/post-template.md)
+To create a post use this template
 
 ```
 ---
