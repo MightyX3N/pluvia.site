@@ -1,5 +1,3 @@
-# Hello World
-
 Welcome to my first post! This is a simple example to showcase how Markdown works for creating content.
 
 ## What is Markdown?
