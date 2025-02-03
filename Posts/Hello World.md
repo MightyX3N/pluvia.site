@@ -1,17 +1,3 @@
----
-title: Title of the post
-post_status: publish
-post_excerpt: This is a post excerpt
-featured_image: _images/post-image.jpg
-taxonomy:
-    category:
-        - category-slug-1
-        - category-slug-2
-    post_tag:
-        - tag-1
-        - tag-1
----
-
 ## Post content
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a lacinia orci.
