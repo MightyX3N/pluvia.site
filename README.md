@@ -1,4 +1,4 @@
-To create a post use this template (add posts to /blog folder)
+To create a post use this template (add posts to the main folder)
 
 ```
 ---
