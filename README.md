@@ -1,3 +1,2 @@
-Commits is Allowed!
-
-If anyone wants to clean this up its cool, since its moved from wordpress to static so a bit messy
+## Commit Rules:
+1. Have pages setup on your fork to see changes
