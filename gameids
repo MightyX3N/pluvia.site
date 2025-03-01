@@ -1,4 +1,5 @@
 <!-- Any id that result in a 404 will not be fetched -->
+<!-- This is generated with ChatGPT so not everything is correct since somehow chatgpt has no idea what the game is so it just guesses -->
 220 <!-- Half-Life 2 -->
 400 <!-- Portal -->
 440 <!-- Team Fortress 2 -->
@@ -59,7 +60,6 @@
 643930 <!-- Don't Starve Together -->
 212680 <!-- L.A. Noire -->
 248350 <!-- Dead Cells -->
-323910 <!-- The Forest -->
 13900 <!-- Thief -->
 1610 <!-- Homeworld Remastered Collection -->
 431060 <!-- Castle Crashers -->
