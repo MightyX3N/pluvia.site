@@ -83,24 +83,69 @@
                     target="_blank"><i class="fab fa-reddit-alien"></i>Reddit</a></div>
             </div>
         </section>
-        <section id="brxe-uijjgu" class="brxe-section bricks-lazy-hidden">
-            <div id="brxe-lwfivt" class="brxe-container bricks-lazy-hidden">
-                <h3 id="brxe-xoblsp" class="brxe-heading">PC Gaming on the go</h3>
-                <div id="brxe-jbagdf" data-script-id="jbagdf" class="brxe-carousel">
-                    <div class="bricks-swiper-container" data-script-args="{&quot;slidesPerView&quot;:1,&quot;slidesPerGroup&quot;:1,&quot;speed&quot;:300,&quot;autoHeight&quot;:true,&quot;effect&quot;:&quot;fade&quot;,&quot;spaceBetween&quot;:0,&quot;initialSlide&quot;:0,&quot;loop&quot;:true,&quot;centeredSlides&quot;:true,&quot;autoplay&quot;:{&quot;delay&quot;:3000,&quot;disableOnInteraction&quot;:true,&quot;pauseOnMouseEnter&quot;:false,&quot;stopOnLastSlide&quot;:false}}">
-                        <div class="swiper-wrapper">
-                            <div class="repeater-item swiper-slide"><img width="1903" height="899" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%201903%20899&#039;%3E%3C/svg%3E" class="image css-filter bricks-lazy-hidden" alt="" decoding="async"
-                                data-src="./images/aynodin2pro_policestories.png" data-type="string"
-                                /></div>
-                            <div class="repeater-item swiper-slide"><img width="1903" height="899" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%201903%20899&#039;%3E%3C/svg%3E" class="image css-filter bricks-lazy-hidden" alt="" decoding="async"
-                                data-src="./images/retroidpocket5_holocure.png" data-type="string"
-                                /></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="brxe-ogzphg" class="brxe-text">
+        <section id="brxe-yxjddh" class="brxe-section bricks-lazy-hidden">
+            <div id="brxe-unhiiy" class="brxe-container bricks-lazy-hidden">
+                <h3 id="brxe-hoiuju" class="brxe-heading">PC Gaming on the go</h3>
+                <div id="brxe-uyicpx" class="brxe-text">
                     <p>No matter where you are you can play your steam library</p>
-                </div><a id="brxe-zomtaf" class="brxe-button bricks-button" href="https://github.com/oxters168/Pluvia/releases/latest" target="_blank"><i class="fab fa-github-alt"></i>Download</a></div>
+                </div>
+                <div id="brxe-kwmgio" data-script-id="kwmgio" class="brxe-code">
+                    <script>
+                        window.addEventListener('load', function () {
+                            // URL to fetch the game IDs from
+                            const gameIdsUrl = 'https://raw.githubusercontent.com/MightyX3N/Pluvia/refs/heads/Main/gameids';
+                    
+                            // Function to check if the image URL returns a 404
+                            const checkImageExists = (url) => {
+                                return fetch(url, { method: 'HEAD' })
+                                    .then(response => response.status !== 404) // If status is not 404, the image exists
+                                    .catch(() => false); // In case of any error, return false
+                            };
+                    
+                            // Fetch the game IDs from the URL
+                            fetch(gameIdsUrl)
+                                .then(response => response.text())
+                                .then(data => {
+                                    // Remove the HTML comments and extract game IDs (assuming they're followed by a comment)
+                                    const gameIDs = data
+                                        .replace(/<!--.*?-->/g, '') // Remove HTML comments
+                                        .split('\n')               // Split by new lines
+                                        .map(id => id.trim())      // Trim each line to remove spaces
+                                        .filter(id => id.length > 0); // Filter out any empty lines
+                    
+                                    const tryFetchingImage = async () => {
+                                        let randomGameID;
+                                        let imageFound = false;
+                    
+                                        // Keep trying different game IDs until a valid image is found
+                                        while (!imageFound) {
+                                            randomGameID = gameIDs[Math.floor(Math.random() * gameIDs.length)];
+                                            const imageUrl = `https://steamcdn-a.akamaihd.net/steam/apps/${randomGameID}/header.jpg`;
+                    
+                                            // Check if the image exists
+                                            imageFound = await checkImageExists(imageUrl);
+                                        }
+                    
+                                        // Set the image source dynamically to the valid random game image URL
+                                        const imageElement = document.getElementById('rndgameimage');
+                                        if (imageElement) {
+                                            imageElement.src = `https://steamcdn-a.akamaihd.net/steam/apps/${randomGameID}/header.jpg`;
+                                        } else {
+                                            console.error('Image with id "rndgameimage" not found.');
+                                        }
+                                    };
+                    
+                                    // Start the process of fetching a valid image
+                                    tryFetchingImage();
+                                })
+                                .catch(error => {
+                                    console.error('Error fetching game IDs:', error);
+                                });
+                        });
+                    </script>
+                </div>
+                <div id="brxe-mfaycr" class="brxe-block bricks-lazy-hidden"><img class="brxe-image" id="rndgameimage" src="#" alt><img class="brxe-image" id="brxe-khopvf" src="./images/bae8285ba47b3a5e7b6bbef3fb00c95675e5632a-media-handheld.svg" alt></div>
+                <div id="brxe-ogwdrv" class="brxe-text-basic">It needs to be noted that we cant gurantee the game shown above works with pluvia</div><a id="brxe-jdyqaf" class="brxe-button bricks-button" href="https://github.com/oxters168/Pluvia/releases/latest"><i class="fab fa-github-alt"></i>Download</a></div>
         </section>
         <section id="brxe-asojoc" class="brxe-section bricks-lazy-hidden">
             <div id="brxe-fsbrfc" class="brxe-container bricks-lazy-hidden">
